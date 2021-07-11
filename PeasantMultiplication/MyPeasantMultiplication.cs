@@ -10,26 +10,28 @@ namespace PeasantMultiplication
 {
     public class MyPeasantMultiplication : Component
     {
+        public int Number1 { get; set; }
+        public int Number2 { get; set; }
+        public int Result { get
+            {
+               return PeasantMultiplication(Number1, Number2);
+            }
+        }
+
         private int PeasantMultiplication(int number1, int number2)
         {
-            int result = 0;
+            int res = 0;
             while (number1 > 0)
             {
                 if(number1 % 2 == 1)
                 {
-                    result += number2;
+                    res += number2;
                 }
 
                 number1 /= 2;
                 number2 *= 2;
             }
-            //
-            return result;
-        }
-
-        public int Calculate(int number1, int number2)
-        {
-            return PeasantMultiplication(number1, number2);
+            return res;
         }
     }
 }

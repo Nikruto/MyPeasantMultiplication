@@ -29,10 +29,10 @@ namespace PeasantMultiplication
         /// </summary>
         private void InitializeComponent()
         {
-            this.peasantMultiplication1 = new PeasantMultiplication.MyPeasantMultiplication();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.myPeasantMultiplication1 = new PeasantMultiplication.MyPeasantMultiplication();
             this.SuspendLayout();
             // 
             // button1
@@ -76,6 +76,11 @@ namespace PeasantMultiplication
             this.textBox2.TabIndex = 4;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // myPeasantMultiplication1
+            // 
+            this.myPeasantMultiplication1.Number1 = 10;
+            this.myPeasantMultiplication1.Number2 = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -93,11 +98,10 @@ namespace PeasantMultiplication
         }
 
         #endregion
-
-        private MyPeasantMultiplication peasantMultiplication1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private MyPeasantMultiplication myPeasantMultiplication1;
     }
 }
 

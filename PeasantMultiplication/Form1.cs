@@ -19,7 +19,10 @@ namespace PeasantMultiplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Sonuç: {peasantMultiplication1.Calculate(int.Parse(textBox1.Text), int.Parse(textBox2.Text))}");
+            myPeasantMultiplication1.Number1 = int.Parse(textBox1.Text);
+            myPeasantMultiplication1.Number2 = int.Parse(textBox2.Text);
+
+            MessageBox.Show($"Sonuç: {myPeasantMultiplication1.Result}");
         }
     }
 }
