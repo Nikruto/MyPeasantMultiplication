@@ -79,7 +79,7 @@ namespace PeasantMultiplication
             // myPeasantMultiplication1
             // 
             this.myPeasantMultiplication1.Number1 = 10;
-            this.myPeasantMultiplication1.Number2 = 14;
+            this.myPeasantMultiplication1.Number2 = 15;
             // 
             // Form1
             // 

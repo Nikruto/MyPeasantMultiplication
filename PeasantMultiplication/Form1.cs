@@ -17,6 +17,12 @@ namespace PeasantMultiplication
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Hesapla butonuna tıklandığında çağırılan ve
+        /// kutulardaki yazıları çarpıp sonucu MessageBox ile gösteren method
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             myPeasantMultiplication1.Number1 = int.Parse(textBox1.Text);
